@@ -1520,3 +1520,165 @@
 | 82º    | Dummy (mais frequente) | 150       | 0.0000   |
 | 83º    | Dummy (mais frequente) | 180       | 0.0000   |
 | 84º    | Dummy (mais frequente) | 210       | 0.0000   |
+
+# Comparação de Modelos e Janelas Temporais sem Indice_queima
+
+## Desempenho por Modelo
+
+### Dummy (mais frequente)
+| Posição | Tempo | F1-score |
+| :--- | :---: | :---: |
+| 1º lugar | 30 dias | 0.0000 |
+| 2º lugar | 60 dias | 0.0000 |
+| 3º lugar | 90 dias | 0.0000 |
+| 4º lugar | 120 dias | 0.0000 |
+| 5º lugar | 150 dias | 0.0000 |
+| 6º lugar | 180 dias | 0.0000 |
+| 7º lugar | 210 dias | 0.0000 |
+
+### Regressão Logística
+| Posição | Tempo | F1-score |
+| :--- | :---: | :---: |
+| 1º lugar | 90 dias | 0.6988 |
+| 2º lugar | 120 dias | 0.6979 |
+| 3º lugar | 30 dias | 0.6961 |
+| 4º lugar | 150 dias | 0.6951 |
+| 5º lugar | 180 dias | 0.6951 |
+| 6º lugar | 210 dias | 0.6951 |
+| 7º lugar | 60 dias | 0.6811 |
+
+### Árvore de Decisão
+| Posição | Tempo | F1-score |
+| :--- | :---: | :---: |
+| 1º lugar | 90 dias | 0.6613 |
+| 2º lugar | 30 dias | 0.5351 |
+| 3º lugar | 120 dias | 0.4804 |
+| 4º lugar | 150 dias | 0.4579 |
+| 5º lugar | 180 dias | 0.4579 |
+| 6º lugar | 210 dias | 0.4579 |
+| 7º lugar | 60 dias | 0.4282 |
+
+### Random Forest
+| Posição | Tempo | F1-score |
+| :--- | :---: | :---: |
+| 1º lugar | 90 dias | 0.5613 |
+| 2º lugar | 30 dias | 0.5379 |
+| 3º lugar | 120 dias | 0.4617 |
+| 4º lugar | 150 dias | 0.4545 |
+| 5º lugar | 180 dias | 0.4545 |
+| 6º lugar | 210 dias | 0.4545 |
+| 7º lugar | 60 dias | 0.4404 |
+
+### Naive Bayes
+| Posição | Tempo | F1-score |
+| :--- | :---: | :---: |
+| 1º lugar | 60 dias | 0.5861 |
+| 2º lugar | 30 dias | 0.5781 |
+| 3º lugar | 90 dias | 0.5733 |
+| 4º lugar | 120 dias | 0.5295 |
+| 5º lugar | 150 dias | 0.4884 |
+| 6º lugar | 180 dias | 0.4884 |
+| 7º lugar | 210 dias | 0.4884 |
+
+### KNN
+| Posição | Tempo | F1-score |
+| :--- | :---: | :---: |
+| 1º lugar | 30 dias | 0.5272 |
+| 2º lugar | 120 dias | 0.5266 |
+| 3º lugar | 60 dias | 0.5200 |
+| 4º lugar | 90 dias | 0.5081 |
+| 5º lugar | 150 dias | 0.4888 |
+| 6º lugar | 180 dias | 0.4888 |
+| 7º lugar | 210 dias | 0.4888 |
+
+### Gradient Boosting
+| Posição | Tempo | F1-score |
+| :--- | :---: | :---: |
+| 1º lugar | 90 dias | 0.4829 |
+| 2º lugar | 120 dias | 0.4771 |
+| 3º lugar | 150 dias | 0.4626 |
+| 4º lugar | 180 dias | 0.4626 |
+| 5º lugar | 210 dias | 0.4626 |
+| 6º lugar | 30 dias | 0.4399 |
+| 7º lugar | 60 dias | 0.3745 |
+
+### AdaBoost
+| Posição | Tempo | F1-score |
+| :--- | :---: | :---: |
+| 1º lugar | 120 dias | 0.5631 |
+| 2º lugar | 90 dias | 0.5538 |
+| 3º lugar | 150 dias | 0.5435 |
+| 4º lugar | 180 dias | 0.5435 |
+| 5º lugar | 210 dias | 0.5435 |
+| 6º lugar | 60 dias | 0.3919 |
+| 7º lugar | 30 dias | 0.3232 |
+
+### HistGradientBoosting
+| Posição | Tempo | F1-score |
+| :--- | :---: | :---: |
+| 1º lugar | 150 dias | 0.6058 |
+| 2º lugar | 180 dias | 0.6058 |
+| 3º lugar | 210 dias | 0.6058 |
+| 4º lugar | 90 dias | 0.5359 |
+| 5º lugar | 30 dias | 0.4912 |
+| 6º lugar | 60 dias | 0.4865 |
+| 7º lugar | 120 dias | 0.4397 |
+
+### RidgeClassifier
+| Posição | Tempo | F1-score |
+| :--- | :---: | :---: |
+| 1º lugar | 60 dias | 0.3806 |
+| 2º lugar | 120 dias | 0.3609 |
+| 3º lugar | 30 dias | 0.3571 |
+| 4º lugar | 90 dias | 0.3571 |
+| 5º lugar | 150 dias | 0.2971 |
+| 6º lugar | 180 dias | 0.2971 |
+| 7º lugar | 210 dias | 0.2971 |
+
+### XGBoost
+| Posição | Tempo | F1-score |
+| :--- | :---: | :---: |
+| 1º lugar | 90 dias | 0.6410 |
+| 2º lugar | 150 dias | 0.6179 |
+| 3º lugar | 180 dias | 0.6179 |
+| 4º lugar | 210 dias | 0.6179 |
+| 5º lugar | 120 dias | 0.6023 |
+| 6º lugar | 30 dias | 0.5496 |
+| 7º lugar | 60 dias | 0.4892 |
+
+---
+
+## Ranking Geral (Top 30 Melhores Resultados)
+
+| Posição | Modelo | Tempo (dias) | F1-score |
+| :--- | :--- | :---: | :---: |
+| 1º | **Regressão Logística** | 90 | **0.6988** |
+| 2º | Regressão Logística | 120 | 0.6979 |
+| 3º | Regressão Logística | 30 | 0.6961 |
+| 4º | Regressão Logística | 150 | 0.6951 |
+| 5º | Regressão Logística | 180 | 0.6951 |
+| 6º | Regressão Logística | 210 | 0.6951 |
+| 7º | Regressão Logística | 60 | 0.6811 |
+| 8º | **Árvore de Decisão** | 90 | 0.6613 |
+| 9º | **XGBoost** | 90 | 0.6410 |
+| 10º | XGBoost | 150 | 0.6179 |
+| 11º | XGBoost | 180 | 0.6179 |
+| 12º | XGBoost | 210 | 0.6179 |
+| 13º | **HistGradientBoosting** | 150 | 0.6058 |
+| 14º | HistGradientBoosting | 180 | 0.6058 |
+| 15º | HistGradientBoosting | 210 | 0.6058 |
+| 16º | XGBoost | 120 | 0.6023 |
+| 17º | **Naive Bayes** | 60 | 0.5861 |
+| 18º | Naive Bayes | 30 | 0.5781 |
+| 19º | Naive Bayes | 90 | 0.5733 |
+| 20º | **AdaBoost** | 120 | 0.5631 |
+| 21º | **Random Forest** | 90 | 0.5613 |
+| 22º | AdaBoost | 90 | 0.5538 |
+| 23º | XGBoost | 30 | 0.5496 |
+| 24º | AdaBoost | 150 | 0.5435 |
+| 25º | AdaBoost | 180 | 0.5435 |
+| 26º | AdaBoost | 210 | 0.5435 |
+| 27º | Random Forest | 30 | 0.5379 |
+| 28º | HistGradientBoosting | 90 | 0.5359 |
+| 29º | Árvore de Decisão | 30 | 0.5351 |
+| 30º | Naive Bayes | 120 | 0.5295 |
